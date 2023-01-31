@@ -1,0 +1,344 @@
+body {
+    background-image: url(../asset/fond.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+@media screen and (min-width: 665px) {
+    body {
+    max-width: 665px;
+    max-height: 960px;
+    margin: auto;
+    }
+}
+
+/*les sections*/
+
+.disposition {
+    margin: auto;
+}
+
+@media screen and (min-width: 665px) {
+    .disposition {
+        display: flex;
+    }
+}
+
+.soussection {
+    width: 320px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+@media screen and (max-width: 665px) {
+    .soussection {
+        margin-top: 30px;
+    }
+}
+
+/*apparition soussection*/
+
+/*écran mobile, 1 par 1*/
+
+@media screen and (max-width: 665px) {
+
+#infos {
+    animation: fadein 3s;
+}
+    
+#soussection1 {
+    animation-name: fade, fadein;
+    animation-duration: 1s, 3s;
+    animation-delay: 0s, 1s;
+}
+
+
+#soussection2 {
+    animation-name: fade, fadein;
+    animation-duration: 2s, 3s;
+    animation-delay: 0s, 2s;
+}
+
+#soussection3 {
+    animation-name: fade, fadein;
+    animation-duration: 3s, 3s;
+    animation-delay: 0s, 3s;
+}
+
+#soussection4 {
+    animation-name: fade, fadein;
+    animation-duration: 4s, 3s;
+    animation-delay: 0s, 4s;
+}
+
+#soussection5 {
+    animation-name: fade, fadein;
+    animation-duration: 5s, 3s;
+    animation-delay: 0s, 5s;
+}
+
+#soussection6 {
+    animation-name: fade, fadein;
+    animation-duration: 6s, 3s;
+    animation-delay: 0s, 6s;
+}
+}
+
+/*écran plus grand 2 par 2*/
+
+@media screen and (min-width: 665px) {
+    #soussection1 {
+        animation: fadein 3s;
+    }
+    
+    
+    #soussection2 {
+        animation: fadein 3s;
+    }
+    
+    #soussection3 {
+        animation-name: fade, fadein;
+        animation-duration: 2s, 3s;
+        animation-delay: 0s, 2s;
+    }
+    
+    #soussection4 {
+        animation-name: fade, fadein;
+        animation-duration: 2s, 3s;
+        animation-delay: 0s, 2s;
+    }
+    
+    #soussection5 {
+        animation-name: fade, fadein;
+        animation-duration: 4s, 3s;
+        animation-delay: 0s, 4s;
+    }
+    
+    #soussection6 {
+        animation-name: fade, fadein;
+        animation-duration: 4s, 3s;
+        animation-delay: 0s, 4s;
+    }
+    }
+
+/*animations apparition*/
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+
+/*header*/
+
+#profil {
+    background-image: url(../asset/profilvidegamer.png);
+    width: 334px;
+    height: 209px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#vide {
+    width: 145px;
+}
+
+#contact {
+    margin-top: 31px;
+    margin-left: 25px;
+    width: 195px;
+}
+
+#Martin {
+    font-size: 150%;
+    margin-top: 2px;
+    line-height: 25px;
+}
+
+#adresse {
+    font-weight: 100;
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+#net {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+#secinfo {
+    margin-right: 4px;
+}
+
+#infos {
+    width: 320px;
+    margin: auto;
+    justify-content: center;
+    font-size: 12px;
+    line-height:16px;
+}
+
+
+@media screen and (max-width: 665px) {
+    #infos {
+        margin-top: 20px;
+        text-align: justify;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 665px) {
+    #infos {
+        margin-left: 10px;
+        margin-top: 17px;
+    }
+}
+
+
+/*main*/
+
+@media screen and (max-width: 665px) {
+    .titre {
+        padding-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 665px) {
+    .titre {
+        padding-left: 15px;
+    }
+}
+
+.titre {
+    font-family: 'Montserrat', sans-serif;
+    color: #2A4899;
+    font-weight: bolder;
+    justify-content: start;   
+}
+
+/*glissement des titres*/
+
+@media screen and (min-width: 665px){
+    .titre {
+        animation-duration: 5s;
+        animation-name: slidein;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .titre {
+        animation-duration: 8s;
+        animation-name: slidein;
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 70%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/*aggrandissement élément pertinant*/
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+    transform: scale(1.2); 
+    }
+
+/*images*/
+
+#expertises {
+    padding-top: 20px;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#formation {
+    height: 195px;
+}
+
+#hob {
+    width: 320px;
+    margin-top: -10px;
+}
+
+#lang {
+    width: 320px;
+    margin-top: -5px;
+}
+
+
+/*font*/
+
+.formation {
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.blue {
+    font-size: small;
+    color: #B4E1FA;
+    font-weight: bold;
+}
+
+.white {
+    font-size: small
+}
+
+.bold {
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.big {
+    font-size: 90px;
+    font-weight: 300;
+    margin-top: -25px;
+    margin-bottom: -25px;
+    color: #B4E1FA;
+}
+
+.xp {
+    line-height: 18px;
+    font-size: 12px;
+}
+
+/*footer*/
+
+footer {
+    height: 50px;
+}
