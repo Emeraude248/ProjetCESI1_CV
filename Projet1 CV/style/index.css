@@ -138,6 +138,9 @@ les éléments contenu étant en partie en absolute*/
     from {
         opacity:0;
     }
+    50% {
+        opacity: 0.5;
+    }
     to {
         opacity:1;
     }
@@ -153,6 +156,85 @@ les éléments contenu étant en partie en absolute*/
     }
 }
 
+/*apparition internes aux sections à partir formation*/
+
+/*écran mobile, 1 par 1*/
+
+@media screen and (max-width: 665px) {
+
+    
+    .bac{
+        animation-name: fade, fadein;
+        animation-duration: 2s, 2s;
+        animation-delay: 0s, 2s;
+    }
+    
+    .bts {
+        animation-name: fade, fadein;
+        animation-duration: 3s, 2s;
+        animation-delay: 0s, 3s;
+    }
+    
+    .licence {
+        animation-name: fade, fadein;
+        animation-duration: 4s, 2s;
+        animation-delay: 0s, 4s;
+    }
+    
+    .stage {
+        animation-name: fade, fadein;
+        animation-duration: 5s, 2s;
+        animation-delay: 0s, 5s;
+    }
+    
+    .alternance {
+        animation-name: fade, fadein;
+        animation-duration: 4s, 2s;
+        animation-delay: 0s, 4s;
+    }
+
+    .jv {
+        animation-name: fade, fadein;
+        animation-duration: 6s, 2s;
+        animation-delay: 0s, 6s;
+    }
+
+    .tof {
+        animation-name: fade, fadein;
+        animation-duration: 6.5s, 2s;
+        animation-delay: 0s, 6.5s;
+    }
+
+    .cine {
+        animation-name: fade, fadein;
+        animation-duration: 7s, 2s;
+        animation-delay: 0s, 7s;
+    }
+
+    .sf {
+        animation-name: fade, fadein;
+        animation-duration: 6.5s, 2s;
+        animation-delay: 0s, 6.5s;
+    }
+
+    .kpop {
+        animation-name: fade, fadein;
+        animation-duration: 7s, 2s;
+        animation-delay: 0s, 7s;
+    }
+
+    .bot {
+        animation-name: fade, fadein;
+        animation-duration: 7.5s, 2s;
+        animation-delay: 0s, 7.5s;
+    }
+    }
+    
+    /*écran plus grand 2 par 2*/
+
+@media screen and (min-width: 665px) {
+     
+    }
 
 /*header*/
 
@@ -273,16 +355,6 @@ les éléments contenu étant en partie en absolute*/
     }
   }
 
-/*aggrandissement élément pertinant*/
-
-.grow { 
-    transition: all .2s ease-in-out; 
-    }
-    
-.grow:hover { 
-    transform: scale(1.2); 
-    }
-
 /*images*/
 
 /*expertises*/
@@ -400,9 +472,9 @@ les éléments contenu étant en partie en absolute*/
     height: 195px;
 }
 
-/*animation changement couleur jauge COMPETENCES*/
+/*COMPETENCES*/
+/*animation changement couleur jauge*/
 
-@media screen and (max-width: 665px){
     .rondb1 {
         width: 16px;
         height: 16px; 
@@ -416,23 +488,23 @@ les éléments contenu étant en partie en absolute*/
         height: 16px; 
         background-color: #2A4899;
         animation-name: blue;
+        animation-duration: 4.5s;
+    }
+
+    .rondb3 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
         animation-duration: 5s;
     }
 
-    .rondb3 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 6s;
-    }
-
     .rondb4 {
         width: 16px;
         height: 16px; 
         background-color: #2A4899;
         animation-name: blue;
-        animation-duration: 7s;
+        animation-duration: 5.5s;
     }
 
     .rondb5 {
@@ -440,7 +512,7 @@ les éléments contenu étant en partie en absolute*/
         height: 16px; 
         background-color: #2A4899;
         animation-name: blue;
-        animation-duration: 8s;
+        animation-duration: 6s;
     }
 
     .rondb6 {
@@ -448,75 +520,16 @@ les éléments contenu étant en partie en absolute*/
         height: 16px; 
         background-color: #2A4899;
         animation-name: blue;
-        animation-duration: 9s;
+        animation-duration: 6.5s;
     }
 
     .rondb7 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 10s;
-    }
-}
-
-@media screen and (min-width: 665px){
-    .rondb1 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 6s;
-    }
-
-    .rondb2 {
         width: 16px;
         height: 16px; 
         background-color: #2A4899;
         animation-name: blue;
         animation-duration: 7s;
     }
-
-    .rondb3 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 8s;
-    }
-
-    .rondb4 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 9s;
-    }
-
-    .rondb5 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 10s;
-    }
-
-    .rondb6 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 11s;
-    }
-
-    .rondb7 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 12s;
-    }
-}
 
 .rondg {
     width: 16px;
@@ -524,6 +537,7 @@ les éléments contenu étant en partie en absolute*/
     background-color:#61615C;
 }
 
+/*animation*/
 
 @keyframes blue {
     from {
