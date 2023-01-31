@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!--chargement police monserrat toutes tailles avant le css, en passant par google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css">
     <title>CV</title>
 </head>
+
 <body>
     <header class="disposition mt-3">
         <section id="profil" class="grow">
             <div id="vide"></div>
             <div id="contact">
                 <span id="Martin">Martin<br>
-                Johnson</span>
+                    Johnson</span>
                 <div id="adresse">
                     25 rue des mésanges<br>
                     Bat. A apt. 112<br>
@@ -34,25 +39,54 @@
         <section id="secinfos">
             <p id="infos">24 ans, célibataire.<br>
                 Après avoir hérité de la collection gaming paternelle, j’ai étudié l’histoire du jeu vidéo par
-                 la pratique. Passionné par le gameplay et la création d’histoire, j’ai cherché à approfondir mes
-                  connaissances par le biais d’une formation au Cnam-Enjmin. Mon stage chez Ubisoft m’a permis de
-                   toucher du doigt mon rêve et mettre en pratique mes connaissances. Aujourd’hui, je souhaite 
-                   rejoindre un studio ou une entreprise du jeu-vidéo afin de développer des idées de jeux 
-                   innovantes et originales.</p>
+                la pratique. Passionné par le gameplay et la création d’histoire, j’ai cherché à approfondir mes
+                connaissances par le biais d’une formation au Cnam-Enjmin. Mon stage chez Ubisoft m’a permis de
+                toucher du doigt mon rêve et mettre en pratique mes connaissances. Aujourd’hui, je souhaite
+                rejoindre un studio ou une entreprise du jeu-vidéo afin de développer des idées de jeux
+                innovantes et originales.</p>
         </section>
     </header>
     <section class="disposition">
         <div class="soussection">
             <div class="titre">
-            EXPERTISES
-            </div> 
-            <div  id="soussection1">
-                <img src="/asset/Expertises.png" class="grow" id="expertises" alt="illustration de l'expertise de Martin en créativité, écriture et design">
+                EXPERTISES
+            </div>
+
+            <!--test pour animation expertises, apparition progressive-->
+            <div id="soussection1">
+                <div>
+                    <div class="xpt rounded-circle border border-white border-2 me-1"><img src="/asset/crea.png"
+                            alt="icône représentant une ampoule" class="expertises">
+                        <div class="rondblanc rounded-circle"></div>
+                        <div class="ligne"></div>
+                        <p class="bold text-center">Créativité</p>
+                    </div>
+                    <div class="fondtransparent rounded-circle me-1"></div>
+                </div>
+                <div>
+                    <div class="ecrit rounded-circle border border-white border-2 me-1"><img src="/asset/ecriture.png"
+                            alt="icône représentant un crayon" class="expertises">
+                        <div class="rondblanc rounded-circle"></div>
+                        <div class="ligne"></div>
+                        <p class="bold text-center">Écriture</p>
+                    </div>
+                    <div class="fondtransparentecrit rounded-circle me-1"></div>
+                </div>
+                <div>
+                    <div class="design rounded-circle border border-white border-2 me-1"><img src="/asset/design.png"
+                            alt="icône représentant un pinceau" class="expertises">
+                        <div class="rondblanc rounded-circle"></div>
+                        <div class="ligne"></div>
+                        <p class="bold text-center">Design</p>
+                    </div>
+                    <div class="fondtransparentdesign rounded-circle me-1"></div>
+                </div>
             </div>
         </div>
+
         <div class="soussection">
             <div class="titre mb-1">
-            FORMATION
+                FORMATION
             </div>
             <div class="d-flex align-items-stretch" id="soussection2">
                 <div>
@@ -60,23 +94,23 @@
                 </div>
                 <div>
                     <p class="formation grow">
-                    <span class="blue">Licence écriture du Jeu Vidéo </span><br>
-                    <span class="white">De septembre 2019 à septembre 2020</span><br>
-                    <span class="bold">Cnam-Enjmin Angoulême</span>
+                        <span class="blue">Licence écriture du Jeu Vidéo </span><br>
+                        <span class="white">De septembre 2019 à septembre 2020</span><br>
+                        <span class="bold">Cnam-Enjmin Angoulême</span>
                     </p>
-<p class="formation grow">
-                    <span class="blue">BTS Développeur web</span><br>
-                    <span class="white">De septembre 2017 à septembre 2019</span><br>
-                    <span class="bold">CESI Bordeaux</span>
-</p>
-<p class="formation grow">
-                    <span class="blue">Baccalauréat S</span><br>
-                    <span class="white">Juin 2016</span><br>
-                    <span class="bold">Lycée Montesquieu Bordeaux</span> 
-</p>         
+                    <p class="formation grow">
+                        <span class="blue">BTS Développeur web</span><br>
+                        <span class="white">De septembre 2017 à septembre 2019</span><br>
+                        <span class="bold">CESI Bordeaux</span>
+                    </p>
+                    <p class="formation grow">
+                        <span class="blue">Baccalauréat S</span><br>
+                        <span class="white">Juin 2016</span><br>
+                        <span class="bold">Lycée Montesquieu Bordeaux</span>
+                    </p>
+                </div>
             </div>
-        </div>
-                
+
         </div>
     </section>
     <section class="disposition">
@@ -84,8 +118,7 @@
             <div class="titre mb-1">
                 COMPÉTENCES
             </div>
-
-            <!--test pour changement couleur animation-->
+            <!--test pour changement couleur animation, validé ^^-->
             <div class="bold" id="soussection3">
                 <div class="d-flex mt-1">
                     <div class="col-5">Scénarisation</div>
@@ -97,7 +130,7 @@
                         <div class="rondb5 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondb6 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondb7 rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
                 <div class="d-flex mt-1">
@@ -110,7 +143,7 @@
                         <div class="rondb5 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
                 <div class="d-flex mt-1">
@@ -123,7 +156,7 @@
                         <div class="rondb5 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
                 <div class="d-flex mt-1">
@@ -136,7 +169,7 @@
                         <div class="rondb5 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondb6 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
                 <div class="d-flex mt-1">
@@ -149,7 +182,7 @@
                         <div class="rondb5 rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
                 <div class="d-flex mt-1">
@@ -162,7 +195,7 @@
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
                 <div class="d-flex mt-1">
@@ -175,15 +208,15 @@
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                         <div class="rondg rounded-circle border border-white border-2 me-1"></div>
-                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>                  
-                    </div>
+                        <div class="rondg rounded-circle border border-white border-2 me-1"></div>
                     </div>
                 </div>
-            </div> 
-       
+            </div>
+        </div>
+
         <div class="soussection">
             <div class="titre mb-1">
-            EXPÉRIENCE PROFESSIONNELLE
+                EXPÉRIENCE PROFESSIONNELLE
             </div>
             <div id="soussection4">
                 <div class="d-flex grow">
@@ -199,7 +232,7 @@
                     <p class="xp mt-3">
                         <span class="white">ans développeur alternance</span><br>
                         <span class="bold">Webagency Bordeaux</span><br>
-                        <span class="white">De septembre 2017 à septembre 2019</span>    
+                        <span class="white">De septembre 2017 à septembre 2019</span>
                     </p>
                 </div>
             </div>
@@ -213,7 +246,8 @@
             <div id="soussection5" class="mt-1">
                 <div class="d-flex justify-content-between ms-1 me-1">
                     <div class="grow">
-                        <div><img src="/asset/JV.png" class="hob" alt="icone représentant une manette de jeux vidéos"></div>
+                        <div><img src="/asset/JV.png" class="hob" alt="icone représentant une manette de jeux vidéos">
+                        </div>
                         <p class="bold text-center">Jeux-vidéos</p>
                     </div>
                     <div class="grow">
@@ -221,7 +255,8 @@
                         <p class="bold text-center">Photo</p>
                     </div>
                     <div class="grow">
-                        <div><img src="/asset/cinema.png" class="hob" alt="icone représentant un morceau de bobine de cinéma"></div>
+                        <div><img src="/asset/cinema.png" class="hob"
+                                alt="icone représentant un morceau de bobine de cinéma"></div>
                         <p class="bold text-center">Cinéma</p>
                     </div>
                 </div>
@@ -231,7 +266,8 @@
                         <p class="bold text-center">Romans SF</p>
                     </div>
                     <div class="grow">
-                        <div><img src="/asset/musique.png" class="hob" alt="icone représentant une doucle croche (musique)"></div>
+                        <div><img src="/asset/musique.png" class="hob"
+                                alt="icone représentant une doucle croche (musique)"></div>
                         <p class="bold text-center">K-Pop</p>
                     </div>
                     <div class="grow">
@@ -239,18 +275,20 @@
                         <p class="bold text-center">Botanique</p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="soussection">
             <div class="titre">
                 LANGUES
             </div>
             <div id="soussection6" class="grow">
-                <img src="/asset/visuellangues.png" id="lang" alt="illustration des langues parlées par Martin : FRançais très bon niveau, anglais bon niveau, espagnol niveau correct">
+                <img src="/asset/visuellangues.png" id="lang"
+                    alt="illustration des langues parlées par Martin : FRançais très bon niveau, anglais bon niveau, espagnol niveau correct">
             </div>
         </div>
     </section>
     <footer>
     </footer>
 </body>
+
 </html>

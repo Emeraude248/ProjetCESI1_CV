@@ -41,6 +41,12 @@ body {
     }
 }
 
+/*pour équilibrer le visuel d'expertises, 
+les éléments contenu étant en partie en absolute*/
+#soussection1 {
+    height: 200px;
+}
+
 /*apparition soussection*/
 
 /*écran mobile, 1 par 1*/
@@ -279,12 +285,116 @@ body {
 
 /*images*/
 
-#expertises {
-    padding-top: 20px;
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
+/*expertises*/
+/*crea*/
+
+.xpt {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 40px;
+    margin-top: 30px;
 }
+
+.fondtransparent {
+    width: 100px;
+    height: 100px;
+    background-color: #B4E1FA;
+    opacity : 50%;
+    position:absolute;
+    z-index: 0;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.expertises {
+    width: 100px;
+    margin-top: -10px;
+    padding-right: 3px;
+}
+
+.rondblanc {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    margin-left: 43px;
+    margin-top: -18px;
+}
+
+.ligne {
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    margin-left: 46px;
+    margin-top: -8px;
+}
+
+/*ecriture*/
+
+.ecrit {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+
+.fondtransparentecrit {
+    width: 100px;
+    height: 100px;
+    background-color: #B4E1FA;
+    opacity : 50%;
+    position:absolute;
+    z-index: 0;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+
+/*Design*/
+
+.design {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+
+.fondtransparentdesign {
+    width: 100px;
+    height: 100px;
+    background-color: #B4E1FA;
+    opacity : 50%;
+    position:absolute;
+    z-index: 0;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+
+/*apparation progressive*/
+
+.xpt {
+    animation-name: fade, fadein;
+    animation-duration: 1s, 3s;
+    animation-delay: 0s, 1s;
+}
+
+.ecrit {
+    animation-name: fade, fadein;
+    animation-duration: 2s, 3s;
+    animation-delay: 0s, 2s;
+}
+
+.design {
+    animation-name: fade, fadein;
+    animation-duration: 3s, 3s;
+    animation-delay: 0s, 3s;
+}
+
+/**/
 
 #formation {
     height: 195px;
