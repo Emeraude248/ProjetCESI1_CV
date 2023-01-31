@@ -1,18 +1,19 @@
 body {
     background-image: url(../asset/fond.png);
-    
+
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
-
+/*gestion de la taille d'écran par rapport à la taille
+ de mes sections et soussections*/
 @media screen and (min-width: 665px) {
     body {
-    max-width: 665px;
-    max-height: 960px;
-    margin: auto;
+        max-width: 665px;
+        max-height: 960px;
+        margin: auto;
     }
 }
 
@@ -32,7 +33,7 @@ body {
     width: 320px;
     margin: auto;
     margin-top: 10px;
-    
+
 }
 
 @media screen and (max-width: 665px) {
@@ -53,46 +54,46 @@ les éléments contenu étant en partie en absolute*/
 
 @media screen and (max-width: 665px) {
 
-#infos {
-    animation: fadein 3s;
-}
-    
-#soussection1 {
-    animation-name: fade, fadein;
-    animation-duration: 1s, 3s;
-    animation-delay: 0s, 1s;
-}
+    #infos {
+        animation: fadein 3s;
+    }
+
+    #soussection1 {
+        animation-name: fade, fadein;
+        animation-duration: 1s, 3s;
+        animation-delay: 0s, 1s;
+    }
 
 
-#soussection2 {
-    animation-name: fade, fadein;
-    animation-duration: 2s, 3s;
-    animation-delay: 0s, 2s;
-}
+    #soussection2 {
+        animation-name: fade, fadein;
+        animation-duration: 2s, 3s;
+        animation-delay: 0s, 2s;
+    }
 
-#soussection3 {
-    animation-name: fade, fadein;
-    animation-duration: 3s, 3s;
-    animation-delay: 0s, 3s;
-}
+    #soussection3 {
+        animation-name: fade, fadein;
+        animation-duration: 3s, 3s;
+        animation-delay: 0s, 3s;
+    }
 
-#soussection4 {
-    animation-name: fade, fadein;
-    animation-duration: 4s, 3s;
-    animation-delay: 0s, 4s;
-}
+    #soussection4 {
+        animation-name: fade, fadein;
+        animation-duration: 4s, 3s;
+        animation-delay: 0s, 4s;
+    }
 
-#soussection5 {
-    animation-name: fade, fadein;
-    animation-duration: 5s, 3s;
-    animation-delay: 0s, 5s;
-}
+    #soussection5 {
+        animation-name: fade, fadein;
+        animation-duration: 5s, 3s;
+        animation-delay: 0s, 5s;
+    }
 
-#soussection6 {
-    animation-name: fade, fadein;
-    animation-duration: 6s, 3s;
-    animation-delay: 0s, 6s;
-}
+    #soussection6 {
+        animation-name: fade, fadein;
+        animation-duration: 6s, 3s;
+        animation-delay: 0s, 6s;
+    }
 }
 
 /*écran plus grand 2 par 2*/
@@ -101,92 +102,112 @@ les éléments contenu étant en partie en absolute*/
     #soussection1 {
         animation: fadein 3s;
     }
-    
-    
+
+
     #soussection2 {
         animation: fadein 3s;
     }
-    
+
     #soussection3 {
         animation-name: fade, fadein;
         animation-duration: 2s, 3s;
         animation-delay: 0s, 2s;
     }
-    
+
     #soussection4 {
         animation-name: fade, fadein;
         animation-duration: 2s, 3s;
         animation-delay: 0s, 2s;
     }
-    
+
     #soussection5 {
         animation-name: fade, fadein;
         animation-duration: 4s, 3s;
         animation-delay: 0s, 4s;
     }
-    
+
     #soussection6 {
         animation-name: fade, fadein;
         animation-duration: 4s, 3s;
         animation-delay: 0s, 4s;
     }
-    }
+}
 
 /*animations apparition*/
 
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
 
 
 @keyframes fade {
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
-        opacity:0;
+        opacity: 0;
     }
 }
 
-/*apparition internes aux sections à partir formation*/
+/*apparition internes aux sections*/
 
 /*écran mobile, 1 par 1*/
 
 @media screen and (max-width: 665px) {
 
-    
-    .bac{
+    .xpt {
+        animation-name: fade, fadein;
+        animation-duration: 1s, 3s;
+        animation-delay: 0s, 1s;
+    }
+
+    .ecrit {
+        animation-name: fade, fadein;
+        animation-duration: 2s, 3s;
+        animation-delay: 0s, 2s;
+    }
+
+    .design {
+        animation-name: fade, fadein;
+        animation-duration: 3s, 3s;
+        animation-delay: 0s, 3s;
+    }
+
+    .bac {
         animation-name: fade, fadein;
         animation-duration: 2s, 2s;
         animation-delay: 0s, 2s;
     }
-    
+
     .bts {
         animation-name: fade, fadein;
         animation-duration: 3s, 2s;
         animation-delay: 0s, 3s;
     }
-    
+
     .licence {
         animation-name: fade, fadein;
         animation-duration: 4s, 2s;
         animation-delay: 0s, 4s;
     }
-    
+
     .stage {
         animation-name: fade, fadein;
         animation-duration: 5s, 2s;
         animation-delay: 0s, 5s;
     }
-    
+
     .alternance {
         animation-name: fade, fadein;
         animation-duration: 4s, 2s;
@@ -201,14 +222,14 @@ les éléments contenu étant en partie en absolute*/
 
     .tof {
         animation-name: fade, fadein;
-        animation-duration: 6.5s, 2s;
-        animation-delay: 0s, 6.5s;
+        animation-duration: 7s, 2s;
+        animation-delay: 0s, 7s;
     }
 
     .cine {
         animation-name: fade, fadein;
-        animation-duration: 7s, 2s;
-        animation-delay: 0s, 7s;
+        animation-duration: 8s, 2s;
+        animation-delay: 0s, 8s;
     }
 
     .sf {
@@ -219,22 +240,142 @@ les éléments contenu étant en partie en absolute*/
 
     .kpop {
         animation-name: fade, fadein;
-        animation-duration: 7s, 2s;
-        animation-delay: 0s, 7s;
+        animation-duration: 7.5s, 2s;
+        animation-delay: 0s, 7.5s;
     }
 
     .bot {
         animation-name: fade, fadein;
-        animation-duration: 7.5s, 2s;
-        animation-delay: 0s, 7.5s;
+        animation-duration: 8.5s, 2s;
+        animation-delay: 0s, 8.5s;
     }
+
+    .fr {
+        animation-name: fade, fadein;
+        animation-duration: 7s, 3s;
+        animation-delay: 0s, 7s;
     }
-    
-    /*écran plus grand 2 par 2*/
+
+    .uk {
+        animation-name: fade, fadein;
+        animation-duration: 8s, 2s;
+        animation-delay: 0s, 8s;
+    }
+
+    .es {
+        animation-name: fade, fadein;
+        animation-duration: 9s, 1s;
+        animation-delay: 0s, 9s;
+    }
+}
+
+/*écran plus grand 2 par 2*/
 
 @media screen and (min-width: 665px) {
-     
+
+    .xpt {
+        animation-name: fade, fadein;
+        animation-duration: 1s, 2s;
+        animation-delay: 0s, 1s;
     }
+
+    .ecrit {
+        animation-name: fade, fadein;
+        animation-duration: 2s, 2s;
+        animation-delay: 0s, 2s;
+    }
+
+    .design {
+        animation-name: fade, fadein;
+        animation-duration: 3s, 2s;
+        animation-delay: 0s, 3s;
+    }
+
+
+    .bac {
+        animation-name: fade, fadein;
+        animation-duration: 1s, 2s;
+        animation-delay: 0s, 1s;
+    }
+
+    .bts {
+        animation-name: fade, fadein;
+        animation-duration: 2s, 2s;
+        animation-delay: 0s, 2s;
+    }
+
+    .licence {
+        animation-name: fade, fadein;
+        animation-duration: 3s, 2s;
+        animation-delay: 0s, 3s;
+    }
+
+    .stage {
+        animation-name: fade, fadein;
+        animation-duration: 5s, 2s;
+        animation-delay: 0s, 5s;
+    }
+
+    .alternance {
+        animation-name: fade, fadein;
+        animation-duration: 4s, 2s;
+        animation-delay: 0s, 4s;
+    }
+
+    .jv {
+        animation-name: fade, fadein;
+        animation-duration: 7s, 1s;
+        animation-delay: 0s, 7s;
+    }
+
+    .tof {
+        animation-name: fade, fadein;
+        animation-duration: 6s, 2s;
+        animation-delay: 0s, 6s;
+    }
+
+    .cine {
+        animation-name: fade, fadein;
+        animation-duration: 5s, 3s;
+        animation-delay: 0s, 5s;
+    }
+
+    .sf {
+        animation-name: fade, fadein;
+        animation-duration: 7s, 1s;
+        animation-delay: 0s, 7s;
+    }
+
+    .kpop {
+        animation-name: fade, fadein;
+        animation-duration: 6s, 2s;
+        animation-delay: 0s, 6s;
+    }
+
+    .bot {
+        animation-name: fade, fadein;
+        animation-duration: 5s, 3s;
+        animation-delay: 0s, 5s;
+    }
+
+    .fr {
+        animation-name: fade, fadein;
+        animation-duration: 5s, 3s;
+        animation-delay: 0s, 5s;
+    }
+
+    .uk {
+        animation-name: fade, fadein;
+        animation-duration: 6s, 2s;
+        animation-delay: 0s, 6s;
+    }
+
+    .es {
+        animation-name: fade, fadein;
+        animation-duration: 7s, 1s;
+        animation-delay: 0s, 7s;
+    }
+}
 
 /*header*/
 
@@ -285,7 +426,7 @@ les éléments contenu étant en partie en absolute*/
     margin: auto;
     justify-content: center;
     font-size: 12px;
-    line-height:16px;
+    line-height: 16px;
 }
 
 
@@ -324,19 +465,19 @@ les éléments contenu étant en partie en absolute*/
     font-family: 'Montserrat', sans-serif;
     color: #2A4899;
     font-weight: bolder;
-    justify-content: start;   
+    justify-content: start;
 }
 
 /*glissement des titres*/
 
-@media screen and (min-width: 665px){
+@media screen and (min-width: 665px) {
     .titre {
         animation-duration: 5s;
         animation-name: slidein;
     }
 }
 
-@media screen and (max-width: 665px){
+@media screen and (max-width: 665px) {
     .titre {
         animation-duration: 8s;
         animation-name: slidein;
@@ -345,15 +486,15 @@ les éléments contenu étant en partie en absolute*/
 
 @keyframes slidein {
     from {
-      margin-left: 70%;
-      width: 100%;
+        margin-left: 70%;
+        width: 100%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
 
 /*images*/
 
@@ -373,8 +514,8 @@ les éléments contenu étant en partie en absolute*/
     width: 100px;
     height: 100px;
     background-color: #B4E1FA;
-    opacity : 50%;
-    position:absolute;
+    opacity: 50%;
+    position: absolute;
     z-index: 0;
     margin-left: 40px;
     margin-top: 30px;
@@ -417,8 +558,8 @@ les éléments contenu étant en partie en absolute*/
     width: 100px;
     height: 100px;
     background-color: #B4E1FA;
-    opacity : 50%;
-    position:absolute;
+    opacity: 50%;
+    position: absolute;
     z-index: 0;
     margin-left: 110px;
     margin-top: 30px;
@@ -439,34 +580,14 @@ les éléments contenu étant en partie en absolute*/
     width: 100px;
     height: 100px;
     background-color: #B4E1FA;
-    opacity : 50%;
-    position:absolute;
+    opacity: 50%;
+    position: absolute;
     z-index: 0;
     margin-left: 180px;
     margin-top: 30px;
 }
 
-/*apparation progressive*/
-
-.xpt {
-    animation-name: fade, fadein;
-    animation-duration: 1s, 3s;
-    animation-delay: 0s, 1s;
-}
-
-.ecrit {
-    animation-name: fade, fadein;
-    animation-duration: 2s, 3s;
-    animation-delay: 0s, 2s;
-}
-
-.design {
-    animation-name: fade, fadein;
-    animation-duration: 3s, 3s;
-    animation-delay: 0s, 3s;
-}
-
-/**/
+/*taille fleche formation*/
 
 #formation {
     height: 195px;
@@ -475,66 +596,66 @@ les éléments contenu étant en partie en absolute*/
 /*COMPETENCES*/
 /*animation changement couleur jauge*/
 
-    .rondb1 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 4s;
-    }
+.rondb1 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 4s;
+}
 
-    .rondb2 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 4.5s;
-    }
+.rondb2 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 4.5s;
+}
 
-    .rondb3 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 5s;
-    }
+.rondb3 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 5s;
+}
 
-    .rondb4 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 5.5s;
-    }
+.rondb4 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 5.5s;
+}
 
-    .rondb5 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 6s;
-    }
+.rondb5 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 6s;
+}
 
-    .rondb6 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 6.5s;
-    }
+.rondb6 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 6.5s;
+}
 
-    .rondb7 {
-        width: 16px;
-        height: 16px; 
-        background-color: #2A4899;
-        animation-name: blue;
-        animation-duration: 7s;
-    }
+.rondb7 {
+    width: 16px;
+    height: 16px;
+    background-color: #2A4899;
+    animation-name: blue;
+    animation-duration: 7s;
+}
 
 .rondg {
     width: 16px;
-    height: 16px; 
-    background-color:#61615C;
+    height: 16px;
+    background-color: #61615C;
 }
 
 /*animation*/
@@ -543,12 +664,13 @@ les éléments contenu étant en partie en absolute*/
     from {
         background-color: #2A4899;
     }
+
     to {
         background-color: #61615C;
     }
 }
 
-/*retour images statiques*/
+/*icônes hobbies*/
 
 .hob {
     width: 50px;
@@ -556,9 +678,10 @@ les éléments contenu étant en partie en absolute*/
     margin-right: 15px;
 }
 
-#lang {
-    width: 320px;
-    margin-top: -5px;
+/*visuel langues*/
+
+.lang {
+    width: 90px;
 }
 
 
@@ -601,5 +724,5 @@ les éléments contenu étant en partie en absolute*/
 /*footer*/
 
 footer {
-    height: 50px;
+    height: 90px;
 }
