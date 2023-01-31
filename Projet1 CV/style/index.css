@@ -290,14 +290,141 @@ body {
     height: 195px;
 }
 
-.rond {
-    width: 15px;
+/*animation changement couleur jauge COMPETENCES*/
+
+@media screen and (max-width: 665px){
+    .rondb1 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 4s;
+    }
+
+    .rondb2 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 5s;
+    }
+
+    .rondb3 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 6s;
+    }
+
+    .rondb4 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 7s;
+    }
+
+    .rondb5 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 8s;
+    }
+
+    .rondb6 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 9s;
+    }
+
+    .rondb7 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 10s;
+    }
 }
 
-#hob {
-    width: 320px;
-    margin-top: -10px;
+@media screen and (min-width: 665px){
+    .rondb1 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 6s;
+    }
+
+    .rondb2 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 7s;
+    }
+
+    .rondb3 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 8s;
+    }
+
+    .rondb4 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 9s;
+    }
+
+    .rondb5 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 10s;
+    }
+
+    .rondb6 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 11s;
+    }
+
+    .rondb7 {
+        width: 16px;
+        height: 16px; 
+        background-color: #2A4899;
+        animation-name: blue;
+        animation-duration: 12s;
+    }
 }
+
+.rondg {
+    width: 16px;
+    height: 16px; 
+    background-color:#61615C;
+}
+
+
+@keyframes blue {
+    from {
+        background-color: #2A4899;
+    }
+    to {
+        background-color: #61615C;
+    }
+}
+
+/*retour images statiques*/
 
 .hob {
     width: 50px;
